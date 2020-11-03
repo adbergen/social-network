@@ -62,7 +62,7 @@ Using npm:
 <li>HTML, CSS, React-Bootstrap</li>
 <li>Javascript, jQuery</li>
 <li>MongoDB</li>
-<li>React, Node.js, Express, Axios</li>
+<li>React, Redux, Firebase, Node.js, Express, Axios</li>
 <li>GitHub, Heroku</li>
 </ul>
 
