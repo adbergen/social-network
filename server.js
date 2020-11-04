@@ -2,9 +2,11 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const passport = require("passport");
+
 const users = require("./routes/api/users");
+
 const app = express();
-require("dotenv").config();
+
 // Bodyparser middleware
 app.use(
   bodyParser.urlencoded({
@@ -12,22 +14,25 @@ app.use(
   })
 );
 app.use(bodyParser.json());
+
 // DB Config
-const uri = process.env.ATLAS_URI;
-mongoose.connect(uri, {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true,
-});
-const connection = mongoose.connection;
-connection.once("open", () => {
-  console.log("MongoDB database connection established successfully");
-});
+const db = require("./config/keys").mongoURI;
+
+// Connect to MongoDB
+mongoose
+  .connect(db, { useNewUrlParser: true })
+  .then(() => console.log("MongoDB successfully connected"))
+  .catch((err) => console.log(err));
+
 // Passport middleware
 app.use(passport.initialize());
+
 // Passport config
 require("./config/passport")(passport);
+
 // Routes
 app.use("/api/users", users);
+
 const port = process.env.PORT || 3001;
+
 app.listen(port, () => console.log(`Server up and running on port ${port} !`));
