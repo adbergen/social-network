@@ -2,12 +2,11 @@ import React, { createContext, useReducer } from "react";
 import ReactDOM from "react-dom";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { initialState, reducer } from "./reducer";
-
-import Nav from "./Nav";
+import App from "./App";
 
 export const AppContext = createContext();
 
-function App() {
+const Root = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const { currentTheme } = state;
 
@@ -15,12 +14,12 @@ function App() {
     <ThemeProvider theme={currentTheme}>
       <AppContext.Provider value={{ ...state, dispatch }}>
         <GlobalStyles />
-        <Nav />
+        <App />
         <h1>Hi Dev.to!</h1>
       </AppContext.Provider>
     </ThemeProvider>
   );
-}
+};
 
 const GlobalStyles = createGlobalStyle`
   html, body {
@@ -33,5 +32,4 @@ const GlobalStyles = createGlobalStyle`
   }
 `;
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<Root />, document.getElementById("root"));
