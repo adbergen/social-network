@@ -4,6 +4,14 @@ const base = {
   colorBlack: "rgb(0, 0, 0)",
 };
 
+const light = {
+  id: "light",
+  ...base,
+  backgroundColor: "#fff",
+  textColor: "white",
+  navColor: "black",
+};
+
 const dark = {
   id: "dark",
   ...base,
@@ -12,12 +20,4 @@ const dark = {
   navColor: "indianred",
 };
 
-const light = {
-  id: "light",
-  ...base,
-  backgroundColor: "#333",
-  textColor: "white",
-  navColor: "lightcoral",
-};
-
-export const theme = { dark, light };
+export const theme = { light, dark };

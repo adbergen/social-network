@@ -1,7 +1,7 @@
 import React, { createContext, useReducer } from "react";
 import ReactDOM from "react-dom";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
-import { initialState, reducer } from "./reducer";
+import { initialState, reducer } from "./reducers/reducer";
 import App from "./App";
 
 export const AppContext = createContext();
@@ -15,7 +15,6 @@ const Root = () => {
       <AppContext.Provider value={{ ...state, dispatch }}>
         <GlobalStyles />
         <App />
-        <h1>Hi Dev.to!</h1>
       </AppContext.Provider>
     </ThemeProvider>
   );

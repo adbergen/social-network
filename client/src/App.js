@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
@@ -13,7 +13,6 @@ import Register from "./components/Register/Register";
 import Login from "./components/Login/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
-import Nav from "./Nav";
 
 import "./App.css";
 
@@ -40,7 +39,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <Router>
-        <Nav />
+        <Navbar />
         <Route exact path="/" component={Landing} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
