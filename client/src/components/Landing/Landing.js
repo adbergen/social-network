@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { NavLink as RouterNavLink } from "react-router-dom";
+import styled from "styled-components";
 
 export default function Landing() {
   return (
@@ -18,33 +20,49 @@ export default function Landing() {
           </p>
           <br />
           <div className="col s6">
-            <Link
+            <NavLink
+              as={RouterNavLink}
               to="/register"
+              exact
+              activeClassName="router-link-exact-active"
               style={{
                 width: "140px",
                 borderRadius: "3px",
                 letterSpacing: "1.5px",
               }}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+              className="btn-large waves-effect waves-light hoverable"
             >
               Register
-            </Link>
+            </NavLink>
           </div>
           <div className="col s6">
-            <Link
+            <NavLink
+              as={RouterNavLink}
               to="/login"
+              exact
+              activeClassName="router-link-exact-active"
               style={{
                 width: "140px",
                 borderRadius: "3px",
                 letterSpacing: "1.5px",
               }}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+              className="btn-large waves-effect waves-light hoverable"
             >
               Log In
-            </Link>
+            </NavLink>
           </div>
         </div>
       </div>
     </div>
   );
 }
+const NavLink = styled.div`
+  display: block;
+  transition: 250ms ease background-color;
+  background: ${(props) => props.theme.buttonBackgroundColor};
+  color: ${(props) => props.theme.buttonTextColor};
+  &:hover {
+    cursor: pointer;
+    background-color: skyblue;
+  }
+`;

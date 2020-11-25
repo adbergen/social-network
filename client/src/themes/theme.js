@@ -9,7 +9,9 @@ const light = {
   ...base,
   backgroundColor: "#fff",
   textColor: "white",
-  navColor: "black",
+  navColor: "indianred",
+  buttonBackgroundColor: "red",
+  buttonTextColor: "green",
 };
 
 const dark = {
@@ -17,7 +19,9 @@ const dark = {
   ...base,
   backgroundColor: "#333",
   textColor: "black",
-  navColor: "indianred",
+  navColor: "#000",
+  buttonBackgroundColor: "green",
+  buttonTextColor: "red",
 };
 
 export const theme = { light, dark };

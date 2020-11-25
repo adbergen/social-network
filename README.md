@@ -1,5 +1,5 @@
 <h1 align="center">
-Social Netowrk
+Social Network
 </h1>
 <h4 align="center" style="margin-bottom:10px">Be sure to star my configuration repo so you can keep up to date on any daily progress!</h4>
 <div align="center">
