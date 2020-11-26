@@ -57,7 +57,6 @@ export default function Landing() {
   );
 }
 const NavLink = styled.div`
-  display: block;
   transition: 250ms ease background-color;
   background: ${(props) => props.theme.buttonBackgroundColor};
   color: ${(props) => props.theme.buttonTextColor};
