@@ -4,13 +4,9 @@ import { NavLink as RouterNavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Card, Button, Nav } from "react-bootstrap";
 
-import SettingsMenu from "../SettingsMenu/SettingsMenu";
-
 export default function Profile() {
   return (
     <div>
-      <SettingsMenu />
-
       <Card style={{ width: "18rem" }}>
         <Card.Body>
           <Card.Title>Profile</Card.Title>
