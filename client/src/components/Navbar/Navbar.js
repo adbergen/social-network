@@ -50,6 +50,7 @@ const NavLink = styled.div`
   display: block;
   padding: 1rem;
   transition: 250ms ease background-color;
+  color: white;
   &:hover {
     cursor: pointer;
     background-color: skyblue;

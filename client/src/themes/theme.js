@@ -12,6 +12,8 @@ const light = {
   navColor: "indianred",
   buttonBackgroundColor: "red",
   buttonTextColor: "green",
+  greetingBackgroundColor: "indianred",
+  greetingTextColor: "white",
 };
 
 const dark = {
@@ -22,6 +24,8 @@ const dark = {
   navColor: "#000",
   buttonBackgroundColor: "green",
   buttonTextColor: "red",
+  greetingBackgroundColor: "black",
+  greetingTextColor: "white",
 };
 
 export const theme = { light, dark };
