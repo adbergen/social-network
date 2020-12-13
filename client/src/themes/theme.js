@@ -10,8 +10,8 @@ const light = {
   backgroundColor: "#fff",
   textColor: "white",
   navColor: "indianred",
-  buttonBackgroundColor: "red",
-  buttonTextColor: "green",
+  buttonBackgroundColor: "blue",
+  buttonTextColor: "white",
   greetingBackgroundColor: "indianred",
   greetingTextColor: "white",
 };
@@ -22,8 +22,8 @@ const dark = {
   backgroundColor: "#333",
   textColor: "black",
   navColor: "#000",
-  buttonBackgroundColor: "green",
-  buttonTextColor: "red",
+  buttonBackgroundColor: "blue",
+  buttonTextColor: "white",
   greetingBackgroundColor: "black",
   greetingTextColor: "white",
 };

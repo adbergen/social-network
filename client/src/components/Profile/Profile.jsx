@@ -19,7 +19,7 @@ class Profile extends Component {
 
     return (
       <div style={{ height: "75vh" }} className="container valign-wrapper">
-        <div className="row">
+        <div className="row" style={{ width: "61vh", padding: "25px" }}>
           <Greeting className="landing-copy col s12 center-align">
             <h4>
               <b>Hey there,</b> {user.name.split(" ")[0]}
@@ -30,7 +30,7 @@ class Profile extends Component {
             </h4>
             <button
               style={{
-                width: "150px",
+                width: "120px",
                 borderRadius: "3px",
                 letterSpacing: "1.5px",
                 marginTop: "1rem",

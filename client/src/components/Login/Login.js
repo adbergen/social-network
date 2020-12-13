@@ -5,6 +5,8 @@ import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 import classnames from "classnames";
 
+import styled from "styled-components";
+
 class Login extends Component {
   constructor() {
     super();
@@ -70,7 +72,7 @@ class Login extends Component {
             </div>
             <form noValidate onSubmit={this.onSubmit}>
               <div className="input-field col s12">
-                <input
+                <LoginInput
                   onChange={this.onChange}
                   value={this.state.email}
                   error={errors.email}
@@ -87,7 +89,7 @@ class Login extends Component {
                 </span>
               </div>
               <div className="input-field col s12">
-                <input
+                <LoginInput
                   onChange={this.onChange}
                   value={this.state.password}
                   error={errors.password}
@@ -137,3 +139,17 @@ const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps, { loginUser })(Login);
+
+const LoginInput = styled.input`
+  border-radius: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background: ${(props) => props.theme.greetingBackgroundColor};
+  min-height: 50px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: ${(props) => props.theme.greetingTextColor};
+  list-style: none;
+`;
