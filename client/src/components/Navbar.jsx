@@ -18,8 +18,9 @@ export default function Nav() {
           to="/"
           exact
           activeClassName="router-link-exact-active"
+          style={{ fontFamily: "monospace" }}
         >
-          Social Network
+          Tipsy
         </NavLink>
       </NavMenu>
       <NavToggle onClick={toggleTheme}>Toggle theme</NavToggle>
