@@ -14,6 +14,7 @@ const light = {
   buttonTextColor: "white",
   greetingBackgroundColor: "indianred",
   greetingTextColor: "white",
+  sidebarTextColor: "black",
 };
 
 const dark = {
@@ -26,6 +27,7 @@ const dark = {
   buttonTextColor: "white",
   greetingBackgroundColor: "black",
   greetingTextColor: "white",
+  sidebarTextColor: "white",
 };
 
 export const theme = { light, dark };

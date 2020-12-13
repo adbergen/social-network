@@ -1,7 +1,7 @@
 import { theme } from "../themes/theme";
 
 export const initialState = {
-  currentTheme: theme.light,
+  currentTheme: theme.dark,
 };
 
 export function reducer(state, action) {

@@ -13,6 +13,7 @@ import Register from "./components/Register/Register.jsx";
 import Login from "./components/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute.jsx";
 import Profile from "./components/Profile.jsx";
+import Sidebar from "./components/Sidebar.jsx";
 
 import "./App.css";
 
@@ -35,11 +36,19 @@ if (localStorage.jwtToken) {
     window.location.href = "./login";
   }
 }
+
+const items = [
+  { name: "home", label: "Home" },
+  { name: "billing", label: "Billing" },
+  { name: "settings", label: "Settings" },
+];
+
 export default function App() {
   return (
     <Provider store={store}>
       <Router>
         <Navbar />
+        <Sidebar items={items} />
         <Route exact path="/" component={Landing} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />
