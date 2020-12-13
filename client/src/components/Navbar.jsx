@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
-import { AppContext } from "../../index";
+import { AppContext } from "../index";
 import { NavLink as RouterNavLink } from "react-router-dom";
 
 export default function Nav() {
