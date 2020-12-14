@@ -5,12 +5,13 @@ import ListItemText from "@material-ui/core/ListItemText";
 import styled from "styled-components";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import Divider from '@material-ui/core/Divider';
+import "../App.css"
 
-export default function Sidebar({ items }) {
+export default function Sidebar() {
   return (
     <SidebarTheme>
           <List disablePadding dense>
-      <ListItem button>
+      <ListItem button style={{ paddingTop: "10px", paddingBottom: "10px" }}>
       <NavLink
           as={RouterNavLink}
           to="/"
@@ -21,8 +22,7 @@ export default function Sidebar({ items }) {
         </NavLink>
       </ListItem>
       <Divider />
-
-      <ListItem button>
+      <ListItem button style={{ paddingTop: "10px", paddingBottom: "10px" }}>
       <NavLink
           as={RouterNavLink}
           to="/"
@@ -34,7 +34,7 @@ export default function Sidebar({ items }) {
       </ListItem>
       <Divider />
 
-      <ListItem button>
+      <ListItem button style={{ paddingTop: "10px", paddingBottom: "10px" }}>
       <NavLink
           as={RouterNavLink}
           to="/"
@@ -46,7 +46,7 @@ export default function Sidebar({ items }) {
       </ListItem>
       <Divider />
 
-      <ListItem button>
+      <ListItem button style={{ paddingTop: "10px", paddingBottom: "10px" }}>
       <NavLink
           as={RouterNavLink}
           to="/"
@@ -69,9 +69,11 @@ color: ${(props) => props.theme.sidebarTextColor};
 
 
 const SidebarTheme = styled.div`
+  position: absolute;
   width: 200px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: #505050;
   color: ${(props) => props.theme.sidebarTextColor};
   float: left;
 `;
+
