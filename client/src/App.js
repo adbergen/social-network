@@ -37,11 +37,11 @@ if (localStorage.jwtToken) {
   }
 }
 
-const items = [
-  { name: "home", label: "Home" },
-  { name: "billing", label: "Billing" },
-  { name: "settings", label: "Settings" },
-];
+// const items = [
+//   { name: "home", label: "Home" },
+//   { name: "billing", label: "Billing" },
+//   { name: "settings", label: "Settings" },
+// ];
 
 export default function App() {
   return (

@@ -8,12 +8,6 @@ import { NavLink, Modal } from "react-bootstrap";
 import styled from "styled-components";
 import Sidebar from "./Sidebar.jsx";
 
-const items = [
-  { name: "home", label: "Home" },
-  { name: "billing", label: "Billing" },
-  { name: "settings", label: "Settings" },
-];
-
 class Profile extends Component {
   onLogoutClick = (e) => {
     e.preventDefault();
@@ -25,7 +19,7 @@ class Profile extends Component {
 
     return (
       <>
-      <Sidebar items={items} />
+      <Sidebar />
       <div style={{ height: "75vh" }} className="container valign-wrapper">
         <div className="row" style={{ width: "61vh", padding: "25px" }}>
           <Greeting className="landing-copy col s12 center-align">
