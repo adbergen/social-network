@@ -48,7 +48,7 @@ export default function App() {
     <Provider store={store}>
       <Router>
         <Navbar />
-        <Sidebar items={items} />
+        {/* <Sidebar items={items} /> */}
         <Route exact path="/" component={Landing} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/login" component={Login} />

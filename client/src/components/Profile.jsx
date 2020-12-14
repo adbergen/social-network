@@ -6,7 +6,13 @@ import { NavLink as RouterNavLink } from "react-router-dom";
 import { NavLink, Modal } from "react-bootstrap";
 
 import styled from "styled-components";
+import Sidebar from "./Sidebar.jsx";
 
+const items = [
+  { name: "home", label: "Home" },
+  { name: "billing", label: "Billing" },
+  { name: "settings", label: "Settings" },
+];
 
 class Profile extends Component {
   onLogoutClick = (e) => {
@@ -18,6 +24,8 @@ class Profile extends Component {
     const { user } = this.props.auth;
 
     return (
+      <>
+      <Sidebar items={items} />
       <div style={{ height: "75vh" }} className="container valign-wrapper">
         <div className="row" style={{ width: "61vh", padding: "25px" }}>
           <Greeting className="landing-copy col s12 center-align">
@@ -44,6 +52,7 @@ class Profile extends Component {
           </Greeting>
         </div>
       </div>
+      </>
     );
   }
 }

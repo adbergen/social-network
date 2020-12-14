@@ -14,7 +14,7 @@ export default function Sidebar() {
       <ListItem button style={{ paddingTop: "10px", paddingBottom: "10px" }}>
       <NavLink
           as={RouterNavLink}
-          to="/"
+          to="/profile"
           exact
           activeClassName="router-link-exact-active"
         >
@@ -62,7 +62,6 @@ export default function Sidebar() {
 }
 
 const NavLink = styled.div`
-border: 1px solid rgba(0, 0, 0, 0.1);
 color: ${(props) => props.theme.sidebarTextColor};
   }
 `;
