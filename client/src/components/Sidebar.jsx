@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
 
-import HomeRoundedIcon from "@material-ui/icons/HomeRounded";
+import PeopleRoundedIcon from '@material-ui/icons/PeopleRounded';
 import PersonRoundedIcon from "@material-ui/icons/PersonRounded";
 import LocalBarRoundedIcon from '@material-ui/icons/LocalBarRounded';
 import SettingsRoundedIcon from '@material-ui/icons/SettingsRounded';
@@ -44,7 +44,7 @@ class Sidebar extends Component {
         </ListItem>
         <Divider />
         <ListItem button style={{ paddingTop: "10px", paddingBottom: "10px" }}>
-          <PersonRoundedIcon style={{ marginRight: "5px" }} />
+          <PeopleRoundedIcon style={{ marginRight: "5px" }} />
           <NavLink
             as={RouterNavLink}
             to="/"

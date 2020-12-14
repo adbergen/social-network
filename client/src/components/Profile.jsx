@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import { NavLink, Modal } from "react-bootstrap";
+import PostForm from "./PostForm"
 
 import styled from "styled-components";
 import Sidebar from "./Sidebar.jsx";
@@ -20,6 +21,7 @@ class Profile extends Component {
     return (
       <>
       <Sidebar />
+      <PostForm />
       <div style={{ height: "75vh" }} className="container valign-wrapper">
         <div className="row" style={{ width: "61vh", padding: "25px" }}>
           <Greeting className="landing-copy col s12 center-align">
