@@ -12,11 +12,11 @@ export default function Landing() {
       <div className="row">
         <div className="col s12 center-align">
           <h4>
-            <b>Meet</b> friends with {" "}
-            <span style={{ fontFamily: "monospace" }}>Tipsy</span>
+            <b>Track</b> your build with {" "}
+            <span style={{ fontFamily: "monospace" }}>Mod Garage</span>
           </h4>
           <p className="flow-text grey-text text-darken-1">
-            A True Social Drinking Experience
+            Upload your latest build
           </p>
           <br />
           <div className="col s6">

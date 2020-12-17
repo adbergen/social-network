@@ -20,7 +20,7 @@ export default function Nav() {
           activeClassName="router-link-exact-active"
           style={{ fontFamily: "monospace" }}
         >
-          Tipsy
+          Mod Garage
         </NavLink>
       </NavMenu>
       <NavToggle onClick={toggleTheme}>Toggle theme</NavToggle>
