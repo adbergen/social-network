@@ -29,7 +29,7 @@ class Profile extends Component {
               <b>Hey there,</b> {user.name.split(" ")[0]}
               <p className="flow-text grey-text text-darken-1">
                 You are logged into your{" "}
-                <span style={{ fontFamily: "monospace" }}>Dashboard!</span>
+                <span style={{ fontFamily: "monospace" }}>Garage!</span>
               </p>
             </h4>
             <button

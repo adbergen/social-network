@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
 
 import PeopleRoundedIcon from '@material-ui/icons/PeopleRounded';
-import PersonRoundedIcon from "@material-ui/icons/PersonRounded";
+import DriveEtaRoundedIcon from '@material-ui/icons/DriveEtaRounded';
 import LocalBarRoundedIcon from '@material-ui/icons/LocalBarRounded';
 import SettingsRoundedIcon from '@material-ui/icons/SettingsRounded';
 import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
@@ -57,14 +57,14 @@ class Sidebar extends Component {
         <Divider />
 
         <ListItem button style={{ paddingTop: "10px", paddingBottom: "10px" }}>
-          <LocalBarRoundedIcon style={{ marginRight: "5px" }}/>
+          <DriveEtaRoundedIcon style={{ marginRight: "5px" }}/>
           <NavLink
             as={RouterNavLink}
             to="/"
             exact
             activeClassName="router-link-exact-active"
           >
-            Drinking Games
+            Cars
           </NavLink>
         </ListItem>
         <Divider />

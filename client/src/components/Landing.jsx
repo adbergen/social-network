@@ -12,11 +12,11 @@ export default function Landing() {
       <div className="row">
         <div className="col s12 center-align">
           <h4>
-            <b>Track</b> your build with {" "}
+            <b>Track</b> your car build and others with {" "}
             <span style={{ fontFamily: "monospace" }}>Mod Garage</span>
           </h4>
           <p className="flow-text grey-text text-darken-1">
-            Upload your latest build
+            Login below to upload your latest build
           </p>
           <br />
           <div className="col s6">
