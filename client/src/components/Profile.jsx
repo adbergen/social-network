@@ -22,9 +22,9 @@ class Profile extends Component {
       <>
       <Sidebar />
       <PostForm />
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
+      <div style={{ height: "75vh" }} className="container">
         <div className="row" style={{ width: "61vh", padding: "25px" }}>
-          <Greeting className="landing-copy col s12 center-align">
+          <Greeting className="col s12 center-align">
             <h4>
               <b>Hey there,</b> {user.name.split(" ")[0]}
               <p className="flow-text grey-text text-darken-1">

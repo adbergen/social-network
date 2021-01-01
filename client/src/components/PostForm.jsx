@@ -72,7 +72,7 @@ class PostForm extends React.Component {
         <div className="post-form-top">
           <div>
             <img className="pencil-post-image" src={window.pencilIcon} />
-            <h6 className="post-form-header">Add a Car</h6>
+            <h6 className="post-form-header">Add your Car</h6>
           </div>
         </div>
         <div className="forced-background">
