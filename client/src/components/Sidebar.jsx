@@ -1,4 +1,4 @@
-import React, { useState, Component } from "react";
+import React, { Component } from "react";
 import { NavLink as RouterNavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
@@ -6,12 +6,10 @@ import { logoutUser } from "../actions/authActions";
 
 import PeopleRoundedIcon from '@material-ui/icons/PeopleRounded';
 import DriveEtaRoundedIcon from '@material-ui/icons/DriveEtaRounded';
-import LocalBarRoundedIcon from '@material-ui/icons/LocalBarRounded';
 import SettingsRoundedIcon from '@material-ui/icons/SettingsRounded';
 import AccountCircleRoundedIcon from '@material-ui/icons/AccountCircleRounded';
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
 import styled from "styled-components";
 import "../App.css";

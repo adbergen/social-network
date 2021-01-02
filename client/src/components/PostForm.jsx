@@ -51,7 +51,7 @@ class PostForm extends React.Component {
   }
 
   checkSubmit(e) {
-    if (e.keyCode == 13 && e.shiftKey == false) {
+    if (e.keyCode === 13 && e.shiftKey === false) {
       this.handleSubmit(e);
     }
   }
@@ -71,7 +71,7 @@ class PostForm extends React.Component {
       >
         <div className="post-form-top">
           <div>
-            <img className="pencil-post-image" src={window.pencilIcon} />
+            
             <h6 className="post-form-header">Add your Car</h6>
           </div>
         </div>
@@ -114,7 +114,6 @@ class PostForm extends React.Component {
           </div>
           <div className="post-form-footer">
           <label htmlFor="photo-file">
-                <img className="pencil-post-image" src={window.cameraIcon} />
                 <h6 className="post-form-header" id="photo-header">
                   Add a Photo
                 </h6>

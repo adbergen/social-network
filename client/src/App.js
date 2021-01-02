@@ -13,7 +13,6 @@ import Register from "./components/Register/Register.jsx";
 import Login from "./components/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute.jsx";
 import Profile from "./components/Profile.jsx";
-import Sidebar from "./components/Sidebar.jsx";
 
 import "./App.css";
 

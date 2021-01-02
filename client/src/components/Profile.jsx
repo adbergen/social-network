@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
-import { NavLink as RouterNavLink } from "react-router-dom";
-import { NavLink, Modal } from "react-bootstrap";
 import PostForm from "./PostForm"
 
 import styled from "styled-components";
