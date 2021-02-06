@@ -1,38 +1,56 @@
-import React from "react";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import InputLabel from '@material-ui/core/InputLabel';
+import FormHelperText from '@material-ui/core/FormHelperText';
+import FormControl from '@material-ui/core/FormControl';
+import Select from '@material-ui/core/Select';
+import NativeSelect from '@material-ui/core/NativeSelect';
 
-class PostForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {value: 'coconut'};
+const useStyles = makeStyles((theme) => ({
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 120,
+  },
+  selectEmpty: {
+    marginTop: theme.spacing(2),
+  },
+}));
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
+export default function PostForm() {
+  const classes = useStyles();
+  const [state, setState] = React.useState({
+    make: '',
+    name: 'hai',
+  });
 
-  handleChange(event) {
-    this.setState({value: event.target.value});
-  }
+  const handleChange = (event) => {
+    const name = event.target.name;
+    setState({
+      ...state,
+      [name]: event.target.value,
+    });
+  };
 
-  handleSubmit(event) {
-    alert('Your favorite flavor is: ' + this.state.value);
-    event.preventDefault();
-  }
-
-  render() {
-    return (
-      <form style={{ textAlign: "center" }} onSubmit={this.handleSubmit}>
-        <label>
-          Pick your favorite flavor:
-          <select value={this.state.value} onChange={this.handleChange}>
-            <option value="grapefruit">Grapefruit</option>
-            <option value="lime">Lime</option>
-            <option value="coconut">Coconut</option>
-            <option value="mango">Mango</option>
-          </select>
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
-    );
-  }
+  return (
+    <div style={{ textAlign:"center" }}>
+      <FormControl variant="outlined" className={classes.formControl}>
+        <InputLabel htmlFor="outlined-age-native-simple">Make</InputLabel>
+        <Select
+          native
+          value={state.make}
+          onChange={handleChange}
+          label="Make"
+          inputProps={{
+            name: 'make',
+            id: 'outlined-age-native-simple',
+          }}
+        >
+          <option aria-label="None" value="" />
+          <option value={10}>Subaru</option>
+          <option value={20}>BMW</option>
+          <option value={30}>Mercedes</option>
+        </Select>
+      </FormControl>
+    </div>
+  );
 }
-export default PostForm;
